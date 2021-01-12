@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta  name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>XYZ - Project</title>
+		<link rel="icon" type="image/png" href="img/logo.jpg">
+		<link rel="stylesheet" href="https://fontawesome.com/releases/v5.6.3/css/all.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html{font-size: 10px; font-family: "Roboto", sans-serif;}
+			a{text-decoration: none; color: #fff;}
+			section{padding: 10rem 0; background-color: #fff;}
+			.heading{
+				text-transform: uppercase;
+				font-size: 3.5rem;
+				letter-spacing: 3px;
+				margin-right: 3px;
+				margin-bottom: 5rem;
+				text-align: center;
+				color: #333;
+				position: relative;
+			}
+			.heading::after{
+				content: "";
+				width: 10rem;
+				height: .8rem;
+				background-color: #45e19f;
+				position: absolute;
+				bottom: 6rem;
+				left: 50%;
+				transform: translateX(-50%);
+				border-radius: 2rem;
+			}
+			body{
+				min-height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #f1f1f1;
+			}
+			.inner-container{
+				width: 50%;
+				float: right;
+				background-color: #fdfdfd;
+			}
+			.inner-container h1{
+				margin-bottom: 30px;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.text{
+				font-size: 13px;
+				color: #545454;
+				line-height: 30px;
+				text-align: justify;
+				margin-bottom: 40px;
+			}
+			.arquitetura{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@media screen and (max-width:1200px){
+				.inner-container{padding: 80px;}
+			}
+			@media screen and (max-width:1000px){
+				.funcionalidades{background-size: 100%; padding: 100px 40px;}
+				.inner-container{width: 100%;}
+			}
+			@media screen and (max-width:600px){
+				.funcionalidades{padding: 0;}
+				.inner-container{padding: 60px;}
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="container">
+				<h1 class="heading">Projecto</h1>
+				<div class="funcionalidades">
+					<div class="inner-container">
+						<h1>Funcionalidades</h1>
+						<p class="text">Este projeto foi realizado por um grupo de três alunos do 2º ano de Informática, da Universidade Portucalense, e consiste na construção de uma aplicação web responsiva que serve de auxílio no controlo das requisições de dispositivos diários (telemóveis, tablets, computadores portáteis), efetuadas pelos funcionários da empresa XYZ. Dadas as circunstâncias, foi decidido pela empresa a implementação do regime de teletrabalho, de formas a potenciar o distanciamento social. E portanto foi criado este website para ajudar no bom funcionamento da empresa perante à esta difícil fase da mesma.<br>O website terá o acesso restrito, ou seja, somente os funcionários autorizados da empresa poderão ter o acesso às consultas, mas estes mesmos funcionários poderão acedê-lo através de qualquer dispositivo.</p>
+						<h1>Tecnologias:</h1>
+						<ion-icon name="logo-html5" style="font-size: 30px"></ion-icon>
+						<ion-icon name="logo-css3" style="font-size: 30px"></ion-icon>
+						<img src="img/icon-bs.png" width="30px">
+						<img src="img/icon-php.png" width="30px">
+						<ion-icon name="server-outline" style="font-size: 30px"></ion-icon>
+						<img src="img/icon-jquery.png" width="30px">
+						<ion-icon name="logo-javascript" style="font-size: 30px"></ion-icon>
+						<ion-icon name="logo-nodejs" style="font-size: 30px"></ion-icon>
+					</div>
+				</div>
+				<h1 class="heading">Mapa da Aplicação</h1>
+				<img class="arquitetura"src="img/arquitetura.jpg">
+			</div>
+		</section>
+		<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+	</body>
+</html>

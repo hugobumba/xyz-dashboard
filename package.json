@@ -1,0 +1,17 @@
+{
+  "name": "XYZ",
+  "version": "1.0.0",
+  "description": "Aplicação web responsiva",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hugo Elias, Jorge Sousa e Marco Teixeira",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

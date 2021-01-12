@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/logo.jpg">
+        <title>XYZ - Team</title>
+        <style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html{
+				font-size: 10px;
+				font-family: "Roboto", sans-serif;
+			}
+			a{
+				text-decoration: none;
+				color: #fff;
+			}
+			section{
+				padding: 10rem 0;
+				background-color: #fff;
+			}
+			.heading{
+				text-transform: uppercase;
+				font-size: 3.5rem;
+				letter-spacing: 3px;
+				margin-right: 3px;
+				margin-bottom: 5rem;
+				text-align: center;
+				color: #333;
+				position: relative;
+			}
+			.heading::after{
+				content: "";
+				width: 10rem;
+				height: .8rem;
+				background-color: #45e19f;
+				position: absolute;
+				bottom: -2rem;
+				left: 50%;
+				transform: translateX(-50%);
+				border-radius: 2rem;
+			}
+			.card-wrapper{
+				display: flex;
+				align-items: center;
+				align-content: center;
+				flex-direction: column;
+			}
+			.card{
+				width: 32rem;
+				background-color: #ebeef8;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				margin: 2rem 0;
+				box-shadow: .5rem .5rem .3rem rgba(0,0,0,0,2);
+			}
+			.card .card-img{
+				width: 100%;
+				height: 26rem;
+				object-fit: cover;
+				-webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+				clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+			}
+			.profile-img{
+				width: 15rem;
+				height: 15rem;
+				object-fit: cover;
+				border-radius: 50%;
+				margin-top: -11rem;
+				z-index: 999;
+				border: 1rem solid #ebeef8;
+			}
+			.card h1{
+				font-size: 2.5rem;
+				color: #333;
+				margin: 1.5rem 0;
+			}
+			.job-title{
+				color: #777;
+				font-size: 1.5rem;
+				font-weight: 300;
+			}
+			.about{
+			font-size: 1.5rem;
+			margin: 1.5rem 0;
+			font-style: italic;
+			text-align: center;
+			color: #333;
+			}
+
+			.card .btn{
+				padding: 1rem 2.5rem;
+				background-color: #445ae3;
+				border-radius: 2rem;
+				margin: 1rem 0;
+				text-transform: uppercase;
+				color: #eee;
+				font-size: 1.4rem;
+				transition: all .5s;
+			}
+			.card .btn:hover{
+				transform: translateY(-2px);
+				box-shadow: .5rem .5rem 2rem rgba(0,0,0,2);
+			}
+			.card .btn:active{
+				transform: translateY(0);
+				box-shadow: none;
+			}
+			.social-media{
+				width: 100%;
+				list-style: none;
+				display: flex;
+				justify-content: space-evenly;
+				padding: 2rem 0;
+				margin-top: 1.5rem;
+				border-top: 3px solid rgba(255,255,255,0.9);
+			}
+			@media screen and (min-width: 700px){
+				.card-wrapper{
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+				}
+				.card{
+					margin: 2rem;
+					transition: transform .5s;
+				}
+
+				@keyframes fadeIn{
+					from{opacity: 0;}
+					to{opacity: 1;}
+				}
+				.card:nth-child(1){animation: fadeIn .5s .5s backwards;}
+				.card:nth-child(2){animation: fadeIn .5s 1s backwards;}
+				.card:nth-child(3){animation: fadeIn .5s 1.5s backwards;}
+				.card:nth-child(4){animation: fadeIn .5s 2s backwards;}
+			}
+			.card:hover{transform: scale(1.1);}
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <h1 class="heading">A NOSSA EQUIPA</h1>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="img/upt.jpg" alt="card background"class="card-img">
+                        <img src="img/icon1.jpg" alt="profile image" class="profile-img">
+                        <h1>Jorge Sousa</h1>
+                        <p class="job-title">DB Admin</p>
+                        <p class="about">UPT Student</p>
+                        <a href="#" class="btn">Entrar em contacto</a>
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fab fa-facebook-square"><img src="img/facebook.png" width="30px"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"><img src="img/twitter.png"width="30px"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram-square"><img src="img/instagram.png"width="30px"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-square"><img src="img/google.png"width="30px"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="img/upt.jpg" alt="card background"class="card-img">
+                        <img src="img/icon2.jpg" alt="profile image" class="profile-img">
+                        <h1>Hugo Elias</h1>
+                        <p class="job-title">Software Developer</p>
+                        <p class="about">UPT Student</p>
+                        <a href="#" class="btn">Entrar em contacto</a>
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fab fa-facebook-square"><img src="img/facebook.png" width="30px"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"><img src="img/twitter.png"width="30px"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram-square"><img src="img/instagram.png"width="30px"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-square"><img src="img/google.png"width="30px"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="img/upt.jpg" alt="card background"class="card-img">
+                        <img src="img/icon3.jpg" alt="profile image" class="profile-img">
+                        <h1>Marco Teixeira</h1>
+                        <p class="job-title">UI/UX Designer</p>
+                        <p class="about">UPT Student</p>
+                        <a href="#" class="btn">Entrar em contacto</a>
+                        <ul class="social-media">
+                            <li><a href="#"><i class="fab fa-facebook-square"><img src="img/facebook.png" width="30px"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"><img src="img/twitter.png"width="30px"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram-square"><img src="img/instagram.png"width="30px"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-square"><img src="img/google.png"width="30px"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
